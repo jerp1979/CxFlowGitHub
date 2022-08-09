@@ -54,7 +54,7 @@ jobs:
           branch: ${{ github.ref }}
           # optional, default is ${{ github.head_ref || github.ref }}
           # GitHub API Token
-          github_token: ${{ github.token }}
+          #github_token: ${{ github.token }}
           # optional, default is ${{ github.token }}
           # Additional parameters for AST scan
           additional_params: --file-filter !readme --report-format sarif --output-name results
