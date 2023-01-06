@@ -53,7 +53,7 @@ jobs:
           # Branch name
           branch: ${{ github.ref }}
           #Api Key
-          apikey: ${{ secrets.APIKEY }}
+          #apikey: ${{ secrets.APIKEY }}
           # optional, default is ${{ github.head_ref || github.ref }}
           # GitHub API Token
           #github_token: ${{ github.token }}
@@ -63,7 +63,6 @@ jobs:
           # optional, default is          
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v1
-        #
         with:
           # Path to SARIF file relative to the root of the repository
           sarif_file: results.sarif
