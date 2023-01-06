@@ -52,6 +52,8 @@ jobs:
           # optional, default is ${{ github.repository }}
           # Branch name
           branch: ${{ github.ref }}
+          #Api Key
+          cx_apikey: ${{ secrets.APIKEY }}
           # optional, default is ${{ github.head_ref || github.ref }}
           # GitHub API Token
           #github_token: ${{ github.token }}
